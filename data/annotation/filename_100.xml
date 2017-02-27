@@ -1,7 +1,7 @@
 <annotation>
-  <folder>data</folder>
+  <folder>img</folder>
   <filename>filename_100</filename>
-  <path>/home/ruqiang/github/CR_AI/data/filename_100.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/filename_100.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -29,10 +29,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>976</xmin>
-      <ymin>315</ymin>
-      <xmax>1074</xmax>
-      <ymax>397</ymax>
+      <xmin>979</xmin>
+      <ymin>322</ymin>
+      <xmax>1077</xmax>
+      <ymax>404</ymax>
     </bndbox>
   </object>
   <object>
@@ -45,6 +45,78 @@
       <ymin>462</ymin>
       <xmax>811</xmax>
       <ymax>542</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>541</xmin>
+      <ymin>188</ymin>
+      <xmax>622</xmax>
+      <ymax>252</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>536</xmin>
+      <ymin>461</ymin>
+      <xmax>618</xmax>
+      <ymax>526</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>920</xmin>
+      <ymin>185</ymin>
+      <xmax>1013</xmax>
+      <ymax>261</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>912</xmin>
+      <ymin>464</ymin>
+      <xmax>1016</xmax>
+      <ymax>536</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>musketeer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>733</xmin>
+      <ymin>465</ymin>
+      <xmax>773</xmax>
+      <ymax>498</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>archers</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>634</xmin>
+      <ymin>496</ymin>
+      <xmax>708</xmax>
+      <ymax>531</ymax>
     </bndbox>
   </object>
 </annotation>
