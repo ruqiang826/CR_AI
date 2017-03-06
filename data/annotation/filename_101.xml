@@ -95,16 +95,4 @@
       <ymax>528</ymax>
     </bndbox>
   </object>
-  <object>
-    <name>dragon</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>1045</xmin>
-      <ymin>436</ymin>
-      <xmax>1111</xmax>
-      <ymax>512</ymax>
-    </bndbox>
-  </object>
 </annotation>

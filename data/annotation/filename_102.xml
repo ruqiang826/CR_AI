@@ -96,18 +96,6 @@
     </bndbox>
   </object>
   <object>
-    <name>dragon</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>1051</xmin>
-      <ymin>447</ymin>
-      <xmax>1102</xmax>
-      <ymax>504</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>musketeer</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
