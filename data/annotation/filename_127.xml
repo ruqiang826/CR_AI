@@ -1,7 +1,7 @@
 <annotation>
-  <folder>data</folder>
+  <folder>img</folder>
   <filename>filename_127</filename>
-  <path>/home/ruqiang/github/CR_AI/data/filename_127.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/filename_127.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -45,6 +45,54 @@
       <ymin>458</ymin>
       <xmax>941</xmax>
       <ymax>554</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>539</xmin>
+      <ymin>192</ymin>
+      <xmax>622</xmax>
+      <ymax>250</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>537</xmin>
+      <ymin>466</ymin>
+      <xmax>621</xmax>
+      <ymax>526</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>915</xmin>
+      <ymin>191</ymin>
+      <xmax>999</xmax>
+      <ymax>259</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>940</xmin>
+      <ymin>473</ymin>
+      <xmax>999</xmax>
+      <ymax>533</ymax>
     </bndbox>
   </object>
 </annotation>

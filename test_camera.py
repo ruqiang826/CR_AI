@@ -19,7 +19,7 @@ while(True):
   #cv2.imshow('frame',gray)
   #if cv2.waitKey(1) & 0xFF == ord('q'):
   #    break
-  if i >= 1000:
+  if i >= 10:
       break
   cv2.imwrite("/tmp/img_%d.jpg" % i,frame)
   i += 1

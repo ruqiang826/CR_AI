@@ -22,3 +22,7 @@ AI for clash royale
 2. start clash royale.
 3. use test_camera_video.py to adjust camera. use test_camera.py to capture image.
 
+## model training
+1. train a model for king and eking(enemy king). This two unit is easy to detect and require less labeled images.
+2. train the second model for the six buildings(king and arena). use the previous model to label king tower, it can save some manual work.
+ 

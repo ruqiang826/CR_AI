@@ -1,7 +1,7 @@
 <annotation>
-  <folder>data</folder>
+  <folder>img</folder>
   <filename>filename_103</filename>
-  <path>/home/ruqiang/github/CR_AI/data/filename_103.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/filename_103.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -17,8 +17,8 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>452</xmin>
-      <ymin>307</ymin>
+      <xmin>465</xmin>
+      <ymin>313</ymin>
       <xmax>558</xmax>
       <ymax>396</ymax>
     </bndbox>
@@ -29,10 +29,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>975</xmin>
-      <ymin>314</ymin>
-      <xmax>1083</xmax>
-      <ymax>405</ymax>
+      <xmin>979</xmin>
+      <ymin>325</ymin>
+      <xmax>1077</xmax>
+      <ymax>402</ymax>
     </bndbox>
   </object>
   <object>
@@ -45,6 +45,54 @@
       <ymin>460</ymin>
       <xmax>828</xmax>
       <ymax>540</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>540</xmin>
+      <ymin>189</ymin>
+      <xmax>622</xmax>
+      <ymax>250</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>541</xmin>
+      <ymin>460</ymin>
+      <xmax>621</xmax>
+      <ymax>524</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>921</xmin>
+      <ymin>196</ymin>
+      <xmax>996</xmax>
+      <ymax>254</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>922</xmin>
+      <ymin>467</ymin>
+      <xmax>998</xmax>
+      <ymax>532</ymax>
     </bndbox>
   </object>
 </annotation>

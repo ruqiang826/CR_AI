@@ -17,10 +17,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>457</xmin>
-      <ymin>306</ymin>
-      <xmax>556</xmax>
-      <ymax>392</ymax>
+      <xmin>467</xmin>
+      <ymin>316</ymin>
+      <xmax>554</xmax>
+      <ymax>393</ymax>
     </bndbox>
   </object>
   <object>
@@ -30,8 +30,8 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>973</xmin>
-      <ymin>314</ymin>
-      <xmax>1086</xmax>
+      <ymin>320</ymin>
+      <xmax>1079</xmax>
       <ymax>402</ymax>
     </bndbox>
   </object>
@@ -42,8 +42,8 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>760</xmin>
-      <ymin>457</ymin>
-      <xmax>816</xmax>
+      <ymin>461</ymin>
+      <xmax>813</xmax>
       <ymax>542</ymax>
     </bndbox>
   </object>
@@ -55,8 +55,8 @@
     <bndbox>
       <xmin>538</xmin>
       <ymin>184</ymin>
-      <xmax>626</xmax>
-      <ymax>252</ymax>
+      <xmax>621</xmax>
+      <ymax>254</ymax>
     </bndbox>
   </object>
   <object>
@@ -66,33 +66,33 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>537</xmin>
-      <ymin>459</ymin>
-      <xmax>623</xmax>
-      <ymax>531</ymax>
+      <ymin>462</ymin>
+      <xmax>616</xmax>
+      <ymax>527</ymax>
     </bndbox>
   </object>
   <object>
-    <name>arena</name>
+    <name>earena</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
       <xmin>919</xmin>
-      <ymin>188</ymin>
-      <xmax>1016</xmax>
+      <ymin>193</ymin>
+      <xmax>995</xmax>
       <ymax>257</ymax>
     </bndbox>
   </object>
   <object>
-    <name>arena</name>
+    <name>earena</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>914</xmin>
-      <ymin>453</ymin>
-      <xmax>1013</xmax>
-      <ymax>534</ymax>
+      <xmin>916</xmin>
+      <ymin>469</ymin>
+      <xmax>995</xmax>
+      <ymax>528</ymax>
     </bndbox>
   </object>
   <object>
@@ -105,18 +105,6 @@
       <ymin>436</ymin>
       <xmax>1111</xmax>
       <ymax>512</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>archers</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>644</xmin>
-      <ymin>495</ymin>
-      <xmax>724</xmax>
-      <ymax>532</ymax>
     </bndbox>
   </object>
 </annotation>
