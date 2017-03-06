@@ -1,0 +1,26 @@
+<annotation>
+  <folder>20170303</folder>
+  <filename>img20170303_1041</filename>
+  <path>/home/ruqiang/github/CR_AI/data_raw/img/20170303/img20170303_1041.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1280</width>
+    <height>720</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>musketeer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>503</xmin>
+      <ymin>428</ymin>
+      <xmax>557</xmax>
+      <ymax>462</ymax>
+    </bndbox>
+  </object>
+</annotation>

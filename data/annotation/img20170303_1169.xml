@@ -1,0 +1,26 @@
+<annotation>
+  <folder>20170303</folder>
+  <filename>img20170303_1169</filename>
+  <path>/home/ruqiang/github/CR_AI/data_raw/img/20170303/img20170303_1169.jpg</path>
+  <source>
+    <database>Unknown</database>
+  </source>
+  <size>
+    <width>1280</width>
+    <height>720</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>giant</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>751</xmin>
+      <ymin>178</ymin>
+      <xmax>814</xmax>
+      <ymax>255</ymax>
+    </bndbox>
+  </object>
+</annotation>

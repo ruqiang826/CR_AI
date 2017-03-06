@@ -76,7 +76,6 @@ def demo(net, image_name):
     """Detect object classes in an image using pre-computed object proposals."""
 
     # Load the demo image
-    im_file = os.path.join(cfg.DATA_DIR, 'demo', image_name)
     im = cv2.imread(im_file)
 
     # Detect all object classes and regress object bounds
@@ -91,7 +90,7 @@ def demo(net, image_name):
     im = im[:, :, (2, 1, 0)]
     fig, ax = plt.subplots(figsize=(12, 12))
     ax.imshow(im, aspect='equal')
-    CONF_THRESH = 0.1
+    CONF_THRESH = 0.05
     NMS_THRESH = 0.3
     print "###",len(scores), len(boxes)
     for cls_ind, cls in enumerate(CLASSES[1:]):
@@ -111,6 +110,10 @@ def parse_args():
     parser = argparse.ArgumentParser(description='Faster R-CNN demo')
     parser.add_argument('--gpu', dest='gpu_id', help='GPU device id to use [0]',
                         default=0, type=int)
+    parser.add_argument('--input', dest='input_dir', help='input dir(with two sub-dir img and annotation)',
+                        type=str)
+    parser.add_argument('--output', dest='output_dir', help='output dir, output label file(xml)',
+                        type=str)
     parser.add_argument('--cpu', dest='cpu_mode',
                         help='Use CPU mode (overrides --gpu)',
                         action='store_true')
@@ -127,16 +130,16 @@ if __name__ == '__main__':
 
     args = parse_args()
 
-    #prototxt = os.path.join(cfg.MODELS_DIR, NETS[args.demo_net][0],
-    #                        'faster_rcnn_alt_opt', 'faster_rcnn_test.pt')
-    #caffemodel = os.path.join(cfg.DATA_DIR, 'faster_rcnn_models',
-    #                          NETS[args.demo_net][1])
-
-    prototxt = 'models/pascal_voc/VGG_CNN_M_1024/faster_rcnn_end2end/test.prototxt'
+    prototxt = 'model/test.prototxt'
     caffemodel = args.model
     if not os.path.isfile(caffemodel):
         raise IOError(('{:s} not found.\nDid you run ./data/script/'
                        'fetch_faster_rcnn_models.sh?').format(caffemodel))
+
+    input_dir =  args.input_dir
+    output_dir = args.output_dir
+    if not (os.path.isdir(input_dir + '/annotation') and os.path.isdir(input_dir + '/img')):
+        raise IOError('input dir must have two dirs: img and annotation')
 
     if args.cpu_mode:
         caffe.set_mode_cpu()
@@ -153,19 +156,13 @@ if __name__ == '__main__':
     for i in xrange(2):
         _, _= im_detect(net, im)
 
-    im_names = ['000456.jpg', '000542.jpg', '001150.jpg',
-                '001763.jpg', '004545.jpg']
-    im_names = ['filename_101.jpg','filename_102.jpg','filename_103.jpg','filename_104.jpg','filename_105.jpg']
-    im_names = ['img_664.jpg','img_660.jpg','img_661.jpg','img_662.jpg','img_663.jpg','img_665.jpg','img_666.jpg','img_667.jpg','img_668.jpg']
-    im_names = ['king06.png','king01.png','img_664.jpg','img_660.jpg','img_661.jpg','img_662.jpg','giant41.png','giant01.png','giant19.png','img2_880.jpg','img2_881.jpg','img2_882.jpg']
-    im_names = []
-   
-    for i in open('tools/demo.txt'):
-        im_names.append(i.rstrip('\n'))
+    im_names = os.listdir(input_dir+"/img")
 
     for im_name in im_names:
         print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+        print im_name
+        im_file = os.path.join(input_dir, 'img', im_name)
         print 'Demo for data/demo/{}'.format(im_name)
-        demo(net, im_name)
+        demo(net, im_file)
 
     plt.show()
