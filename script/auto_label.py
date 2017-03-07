@@ -25,6 +25,8 @@ import caffe, os, sys, cv2
 import argparse
 import pdb
 
+
+
 CLASSES = ('__background__', 'king', 'eking', 'giant',
            'arena', 'darena', 'earena','bomb', 'witch',
            'musketeer')
@@ -96,8 +98,6 @@ def demo(net, image_name):
     for cls_ind, cls in enumerate(CLASSES[1:]):
         cls_ind += 1 # because we skipped background
         cls_boxes = boxes[:, 4*cls_ind:4*(cls_ind + 1)]
-        #pdb.set_trace()
-        print cls_ind,cls
         cls_scores = scores[:, cls_ind]
         dets = np.hstack((cls_boxes,
                           cls_scores[:, np.newaxis])).astype(np.float32)
@@ -124,6 +124,7 @@ def parse_args():
     args = parser.parse_args()
 
     return args
+
 
 if __name__ == '__main__':
     cfg.TEST.HAS_RPN = True  # Use RPN for proposals
@@ -162,6 +163,15 @@ if __name__ == '__main__':
         print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
         print im_name
         im_file = os.path.join(input_dir, 'img', im_name)
+        index = im_file.rindex('.')
+        label_file = im_file[:index] + ".xml"
+        if os.path.isfile(label_file):
+          tmp_reader = PascalVocReader(label_file)
+          tmp_writer = PascalVocWriter()
+          shapes = tmp_reader.getShapes()
+          for shape in shapes:
+           
+        
         print 'Demo for data/demo/{}'.format(im_name)
         demo(net, im_file)
 
