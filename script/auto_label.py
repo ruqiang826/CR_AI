@@ -23,7 +23,7 @@ import numpy as np
 import scipy.io as sio
 import caffe, os, sys, cv2
 import argparse
-import pdb
+from pascal_voc_io import PascalVocWriter, PascalVocReader
 
 
 
@@ -74,7 +74,7 @@ def vis_detections(im, class_name, dets, ax, thresh=0.5):
     plt.tight_layout()
     plt.draw()
 
-def demo(net, image_name):
+def auto_label(net, image_name, writer):
     """Detect object classes in an image using pre-computed object proposals."""
 
     # Load the demo image
@@ -92,9 +92,9 @@ def demo(net, image_name):
     im = im[:, :, (2, 1, 0)]
     fig, ax = plt.subplots(figsize=(12, 12))
     ax.imshow(im, aspect='equal')
-    CONF_THRESH = 0.05
+    CONF_THRESH = 0.6
     NMS_THRESH = 0.3
-    print "###",len(scores), len(boxes)
+    label_num = 0
     for cls_ind, cls in enumerate(CLASSES[1:]):
         cls_ind += 1 # because we skipped background
         cls_boxes = boxes[:, 4*cls_ind:4*(cls_ind + 1)]
@@ -103,7 +103,17 @@ def demo(net, image_name):
                           cls_scores[:, np.newaxis])).astype(np.float32)
         keep = nms(dets, NMS_THRESH)
         dets = dets[keep, :]
+        inds = np.where(dets[:, -1] >= CONF_THRESH)[0]
+        if len(inds) == 0:
+            continue
+
+        for i in inds:
+            bbox = dets[i, :4]
+            score = dets[i, -1]
+            writer.addBndBox(bbox[0], bbox[1], bbox[2], bbox[3], cls)
+            label_num += 1
         vis_detections(im, cls, dets, ax, thresh=CONF_THRESH)
+    return label_num
 
 def parse_args():
     """Parse input arguments."""
@@ -161,18 +171,27 @@ if __name__ == '__main__':
 
     for im_name in im_names:
         print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-        print im_name
+        print "auto label {0}".format(im_name)
         im_file = os.path.join(input_dir, 'img', im_name)
-        index = im_file.rindex('.')
-        label_file = im_file[:index] + ".xml"
-        if os.path.isfile(label_file):
-          tmp_reader = PascalVocReader(label_file)
-          tmp_writer = PascalVocWriter()
-          shapes = tmp_reader.getShapes()
-          for shape in shapes:
-           
-        
-        print 'Demo for data/demo/{}'.format(im_name)
-        demo(net, im_file)
 
+        label_file = os.path.join(input_dir, 'annotation', im_name)
+        index = label_file.rindex('.')
+        label_file = label_file[:index] + ".xml"
+        if os.path.isfile(label_file):
+            tmp_reader = PascalVocReader(label_file)
+            size = tmp_reader.getSize()
+            tmp_writer = PascalVocWriter(input_dir, im_name, size)
+            shapes = tmp_reader.getShapes()
+            for i in shapes:
+                tmp_writer.addBndBox(i[1][0][0], i[1][0][1], i[1][2][0], i[1][2][1], i[0])
+            print "load {0} labels from {1}".format(len(shapes), label_file)
+        else:
+            print "can not find label file {0}".format(label_file)
+            size = cv2.imread(im_file).shape
+            tmp_writer = PascalVocWriter(input_dir, im_name, size)
+        
+        n = auto_label(net, im_file, tmp_writer)
+        
+        tmp_writer.save(output_dir + '/' + os.path.basename(label_file))
+        print "auto label {0} labels".format(n)
     plt.show()

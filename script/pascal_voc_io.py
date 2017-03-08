@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf8 -*-
-import _init_path
+#import _init_path
 import sys
 from xml.etree import ElementTree
 from xml.etree.ElementTree import Element, SubElement
 from lxml import etree
+import pdb
 
 
 class PascalVocWriter:
@@ -68,6 +69,7 @@ class PascalVocWriter:
     def addBndBox(self, xmin, ymin, xmax, ymax, name):
         bndbox = {'xmin': xmin, 'ymin': ymin, 'xmax': xmax, 'ymax': ymax}
         bndbox['name'] = name
+        print bndbox
         self.boxlist.append(bndbox)
 
     def appendObjects(self, top):
@@ -111,6 +113,7 @@ class PascalVocReader:
         # shapes type:
         # [labbel, [(x1,y1), (x2,y2), (x3,y3), (x4,y4)], color, color]
         self.shapes = []
+        self.img_shape = (0, 0, 0)
         self.filepath = filepath
         self.parseXML()
 
@@ -125,11 +128,20 @@ class PascalVocReader:
         points = [(xmin, ymin), (xmax, ymin), (xmax, ymax), (xmin, ymax)]
         self.shapes.append((label, points, None, None))
 
+    def getSize(self):
+        return self.img_shape
+
     def parseXML(self):
         assert self.filepath.endswith('.xml'), "Unsupport file format"
         parser = etree.XMLParser(encoding='utf-8')
         xmltree = ElementTree.parse(self.filepath, parser=parser).getroot()
         filename = xmltree.find('filename').text
+
+        size = xmltree.find('size')
+        width = int(size.find('width').text)
+        height = int(size.find('height').text)
+        depth = int(size.find('depth').text)
+        self.img_shape = (height, width, depth)
 
         for object_iter in xmltree.findall('object'):
             rects = []
@@ -142,12 +154,14 @@ class PascalVocReader:
         return True
 
 
-# tempParseReader = PascalVocReader('test.xml')
-# print tempParseReader.getShapes()
-"""
-# Test
-tmp = PascalVocWriter('temp','test', (10,20,3))
-tmp.addBndBox(10,10,20,30,'chair')
-tmp.addBndBox(1,1,600,600,'car')
-tmp.save()
-"""
+
+#tempParseReader = PascalVocReader('/tmp/test.xml')
+#shapes = tempParseReader.getShapes()
+#size = tempParseReader.getSize()
+## Test
+#tmp = PascalVocWriter('/tmp','write', size)
+#for i in shapes:
+#  tmp.addBndBox(i[1][0][0], i[1][0][1], i[1][2][0], i[1][2][1], i[0])
+##tmp.addBndBox(10,10,20,30,'chair')
+##tmp.addBndBox(1,1,600,600,'car')
+#tmp.save('/tmp/write.xml')
