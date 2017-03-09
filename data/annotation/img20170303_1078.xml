@@ -1,7 +1,7 @@
 <annotation>
-  <folder>20170303</folder>
+  <folder>img</folder>
   <filename>img20170303_1078</filename>
-  <path>/home/ruqiang/github/CR_AI/data_raw/img/20170303/img20170303_1078.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1078.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -21,6 +21,78 @@
       <ymin>501</ymin>
       <xmax>740</xmax>
       <ymax>541</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>king</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>424</xmin>
+      <ymin>307</ymin>
+      <xmax>519</xmax>
+      <ymax>389</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>eking</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>950</xmin>
+      <ymin>315</ymin>
+      <xmax>1034</xmax>
+      <ymax>391</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>500</xmin>
+      <ymin>179</ymin>
+      <xmax>585</xmax>
+      <ymax>243</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>501</xmin>
+      <ymin>451</ymin>
+      <xmax>580</xmax>
+      <ymax>513</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>873</xmin>
+      <ymin>187</ymin>
+      <xmax>959</xmax>
+      <ymax>249</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>873</xmin>
+      <ymin>451</ymin>
+      <xmax>949</xmax>
+      <ymax>517</ymax>
     </bndbox>
   </object>
 </annotation>

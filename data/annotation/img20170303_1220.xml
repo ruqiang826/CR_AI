@@ -1,7 +1,7 @@
 <annotation>
-  <folder>20170303</folder>
+  <folder>img</folder>
   <filename>img20170303_1220</filename>
-  <path>/home/ruqiang/github/CR_AI/data_raw/img/20170303/img20170303_1220.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1220.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -21,6 +21,90 @@
       <ymin>206</ymin>
       <xmax>687</xmax>
       <ymax>234</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>king</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>434</xmin>
+      <ymin>305</ymin>
+      <xmax>516</xmax>
+      <ymax>389</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>eking</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>922</xmin>
+      <ymin>313</ymin>
+      <xmax>1033</xmax>
+      <ymax>397</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>arena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>499</xmin>
+      <ymin>451</ymin>
+      <xmax>584</xmax>
+      <ymax>518</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>darena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>505</xmin>
+      <ymin>179</ymin>
+      <xmax>562</xmax>
+      <ymax>246</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>868</xmin>
+      <ymin>184</ymin>
+      <xmax>954</xmax>
+      <ymax>256</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>earena</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>877</xmin>
+      <ymin>457</ymin>
+      <xmax>958</xmax>
+      <ymax>523</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>bomb</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>546</xmin>
+      <ymin>140</ymin>
+      <xmax>580</xmax>
+      <ymax>176</ymax>
     </bndbox>
   </object>
 </annotation>
