@@ -22,7 +22,10 @@ AI for clash royale
 2. start clash royale.
 3. use test_camera_video.py to adjust camera. use test_camera.py to capture image.
 
-## model training
+## model training and image labeling
 1. train a model for king and eking(enemy king). This two unit is easy to detect and require less labeled images.
-2. train the second model for the six buildings(king and arena). use the previous model to label king tower, it can save some manual work.
+2. train the second model for buildings: king, eking(enemy king), arena, earena, darena(destroyed arena). 
+3. the model in 2 is called pre-model, for further labeling, just manually label the new unit, like giant, save the xml in a temp folder. then use the script auto_label.py to automaticlly label the file in temp folder. got output files with auto-labeled all buildings and manually labeled giant. maually check the auto-labeled files use labelImg.
+4. repeat step 3 for more unit, use pre-model for auto-labeling.
+
  

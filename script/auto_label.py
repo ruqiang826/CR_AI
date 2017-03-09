@@ -110,7 +110,7 @@ def auto_label(net, image_name, writer):
         for i in inds:
             bbox = dets[i, :4]
             score = dets[i, -1]
-            writer.addBndBox(bbox[0], bbox[1], bbox[2], bbox[3], cls)
+            writer.addBndBox(int(bbox[0]), int(bbox[1]), int(bbox[2]), int(bbox[3]), cls, 'Auto')
             label_num += 1
         vis_detections(im, cls, dets, ax, thresh=CONF_THRESH)
     return label_num
