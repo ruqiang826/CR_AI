@@ -29,7 +29,9 @@ from pascal_voc_io import PascalVocWriter, PascalVocReader
 
 CLASSES = ('__background__', 'king', 'eking', 'giant',
            'arena', 'darena', 'earena','bomb', 'witch',
-           'musketeer')
+           'musketeer', 'prince', 'dragon', 'knight',
+                         'minipekka', 'skeleton', 'skeletonarmy',
+                         'speargoblin', 'speargoblins')
 #           'aeroplane', 'bicycle', 'bird', 'boat',
 #           'bottle', 'bus', 'car', 'cat', 'chair',
 #           'cow', 'diningtable', 'dog', 'horse',
