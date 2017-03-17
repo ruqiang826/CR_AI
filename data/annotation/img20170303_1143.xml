@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1143</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1143.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1143.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -29,9 +29,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>434</xmin>
+      <xmin>440</xmin>
       <ymin>307</ymin>
-      <xmax>518</xmax>
+      <xmax>524</xmax>
       <ymax>384</ymax>
     </bndbox>
   </object>
@@ -42,9 +42,9 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>932</xmin>
-      <ymin>317</ymin>
-      <xmax>1044</xmax>
-      <ymax>388</ymax>
+      <ymin>312</ymin>
+      <xmax>1041</xmax>
+      <ymax>394</ymax>
     </bndbox>
   </object>
   <object>
@@ -65,10 +65,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>870</xmin>
-      <ymin>455</ymin>
-      <xmax>946</xmax>
-      <ymax>523</ymax>
+      <xmin>879</xmin>
+      <ymin>454</ymin>
+      <xmax>955</xmax>
+      <ymax>522</ymax>
     </bndbox>
   </object>
   <object>
@@ -77,10 +77,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>882</xmin>
-      <ymin>190</ymin>
-      <xmax>952</xmax>
-      <ymax>245</ymax>
+      <xmin>873</xmin>
+      <ymin>185</ymin>
+      <xmax>956</xmax>
+      <ymax>248</ymax>
     </bndbox>
   </object>
   <object>
@@ -93,6 +93,54 @@
       <ymin>184</ymin>
       <xmax>583</xmax>
       <ymax>245</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>speargoblins</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>690</xmin>
+      <ymin>176</ymin>
+      <xmax>751</xmax>
+      <ymax>264</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblin</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>580</xmin>
+      <ymin>192</ymin>
+      <xmax>623</xmax>
+      <ymax>260</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>skeleton</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>530</xmin>
+      <ymin>246</ymin>
+      <xmax>603</xmax>
+      <ymax>267</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>skeleton</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>544</xmin>
+      <ymin>160</ymin>
+      <xmax>587</xmax>
+      <ymax>187</ymax>
     </bndbox>
   </object>
 </annotation>

@@ -29,10 +29,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>968</xmin>
-      <ymin>313</ymin>
-      <xmax>1089</xmax>
-      <ymax>406</ymax>
+      <xmin>971</xmin>
+      <ymin>322</ymin>
+      <xmax>1087</xmax>
+      <ymax>405</ymax>
     </bndbox>
   </object>
   <object>
@@ -93,6 +93,78 @@
       <ymin>466</ymin>
       <xmax>998</xmax>
       <ymax>531</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>bomb</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>720</xmin>
+      <ymin>424</ymin>
+      <xmax>759</xmax>
+      <ymax>467</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>archers</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>715</xmin>
+      <ymin>487</ymin>
+      <xmax>800</xmax>
+      <ymax>530</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>musketeer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>785</xmin>
+      <ymin>471</ymin>
+      <xmax>836</xmax>
+      <ymax>500</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>bomb</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>961</xmin>
+      <ymin>435</ymin>
+      <xmax>1012</xmax>
+      <ymax>470</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>dragon</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>956</xmin>
+      <ymin>459</ymin>
+      <xmax>1001</xmax>
+      <ymax>511</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>archers</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>968</xmin>
+      <ymin>539</ymin>
+      <xmax>1006</xmax>
+      <ymax>600</ymax>
     </bndbox>
   </object>
 </annotation>

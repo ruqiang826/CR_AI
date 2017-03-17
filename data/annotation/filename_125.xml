@@ -29,9 +29,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>972</xmin>
-      <ymin>315</ymin>
-      <xmax>1084</xmax>
+      <xmin>971</xmin>
+      <ymin>319</ymin>
+      <xmax>1079</xmax>
       <ymax>404</ymax>
     </bndbox>
   </object>
@@ -77,10 +77,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>918</xmin>
+      <xmin>917</xmin>
       <ymin>194</ymin>
       <xmax>998</xmax>
-      <ymax>262</ymax>
+      <ymax>256</ymax>
     </bndbox>
   </object>
   <object>
@@ -93,6 +93,78 @@
       <ymin>460</ymin>
       <xmax>1000</xmax>
       <ymax>530</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>musketeer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>786</xmin>
+      <ymin>450</ymin>
+      <xmax>836</xmax>
+      <ymax>485</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>bomb</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>787</xmin>
+      <ymin>482</ymin>
+      <xmax>828</xmax>
+      <ymax>505</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>archers</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>809</xmin>
+      <ymin>487</ymin>
+      <xmax>854</xmax>
+      <ymax>546</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>archers</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>944</xmin>
+      <ymin>532</ymin>
+      <xmax>990</xmax>
+      <ymax>600</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>bomb</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>953</xmin>
+      <ymin>435</ymin>
+      <xmax>994</xmax>
+      <ymax>471</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>dragon</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>946</xmin>
+      <ymin>460</ymin>
+      <xmax>999</xmax>
+      <ymax>499</ymax>
     </bndbox>
   </object>
 </annotation>

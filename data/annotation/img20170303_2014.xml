@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_2014</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_2014.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_2014.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -105,6 +105,30 @@
       <ymin>116</ymin>
       <xmax>615</xmax>
       <ymax>153</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblin</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>571</xmin>
+      <ymin>219</ymin>
+      <xmax>607</xmax>
+      <ymax>255</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>archers</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>524</xmin>
+      <ymin>259</ymin>
+      <xmax>554</xmax>
+      <ymax>311</ymax>
     </bndbox>
   </object>
 </annotation>

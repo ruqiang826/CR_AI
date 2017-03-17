@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1065</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1065.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1065.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -53,10 +53,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>428</xmin>
+      <xmin>431</xmin>
       <ymin>304</ymin>
-      <xmax>516</xmax>
-      <ymax>388</ymax>
+      <xmax>519</xmax>
+      <ymax>385</ymax>
     </bndbox>
   </object>
   <object>
@@ -77,10 +77,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>503</xmin>
-      <ymin>179</ymin>
-      <xmax>586</xmax>
-      <ymax>249</ymax>
+      <xmin>501</xmin>
+      <ymin>183</ymin>
+      <xmax>583</xmax>
+      <ymax>246</ymax>
     </bndbox>
   </object>
   <object>
@@ -101,9 +101,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>862</xmin>
+      <xmin>872</xmin>
       <ymin>453</ymin>
-      <xmax>952</xmax>
+      <xmax>951</xmax>
       <ymax>517</ymax>
     </bndbox>
   </object>
@@ -113,10 +113,46 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>880</xmin>
-      <ymin>184</ymin>
-      <xmax>958</xmax>
-      <ymax>245</ymax>
+      <xmin>875</xmin>
+      <ymin>188</ymin>
+      <xmax>953</xmax>
+      <ymax>249</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblin</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>637</xmin>
+      <ymin>209</ymin>
+      <xmax>671</xmax>
+      <ymax>239</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>skeleton</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>708</xmin>
+      <ymin>460</ymin>
+      <xmax>748</xmax>
+      <ymax>511</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>speargoblins</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>812</xmin>
+      <ymin>481</ymin>
+      <xmax>891</xmax>
+      <ymax>528</ymax>
     </bndbox>
   </object>
 </annotation>

@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1164</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1164.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1164.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -93,6 +93,30 @@
       <ymin>183</ymin>
       <xmax>956</xmax>
       <ymax>249</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>speargoblin</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>718</xmin>
+      <ymin>245</ymin>
+      <xmax>769</xmax>
+      <ymax>269</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>prince</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>920</xmin>
+      <ymin>250</ymin>
+      <xmax>974</xmax>
+      <ymax>289</ymax>
     </bndbox>
   </object>
 </annotation>

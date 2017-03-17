@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1057</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1057.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1057.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -65,10 +65,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>936</xmin>
+      <xmin>940</xmin>
       <ymin>314</ymin>
       <xmax>1044</xmax>
-      <ymax>386</ymax>
+      <ymax>393</ymax>
     </bndbox>
   </object>
   <object>
@@ -77,10 +77,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>501</xmin>
+      <xmin>502</xmin>
       <ymin>181</ymin>
       <xmax>585</xmax>
-      <ymax>251</ymax>
+      <ymax>246</ymax>
     </bndbox>
   </object>
   <object>
@@ -117,6 +117,54 @@
       <ymin>458</ymin>
       <xmax>958</xmax>
       <ymax>524</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblin</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>744</xmin>
+      <ymin>220</ymin>
+      <xmax>795</xmax>
+      <ymax>252</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblins</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>727</xmin>
+      <ymin>445</ymin>
+      <xmax>790</xmax>
+      <ymax>480</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>speargoblins</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>935</xmin>
+      <ymin>513</ymin>
+      <xmax>994</xmax>
+      <ymax>567</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>skeleton</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>629</xmin>
+      <ymin>473</ymin>
+      <xmax>679</xmax>
+      <ymax>518</ymax>
     </bndbox>
   </object>
 </annotation>

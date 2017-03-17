@@ -107,4 +107,16 @@
       <ymax>498</ymax>
     </bndbox>
   </object>
+  <object>
+    <name>archers</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>638</xmin>
+      <ymin>497</ymin>
+      <xmax>710</xmax>
+      <ymax>532</ymax>
+    </bndbox>
+  </object>
 </annotation>

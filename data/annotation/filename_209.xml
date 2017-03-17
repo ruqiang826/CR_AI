@@ -31,8 +31,8 @@
     <bndbox>
       <xmin>986</xmin>
       <ymin>324</ymin>
-      <xmax>1092</xmax>
-      <ymax>402</ymax>
+      <xmax>1089</xmax>
+      <ymax>400</ymax>
     </bndbox>
   </object>
   <object>
@@ -81,6 +81,18 @@
       <ymin>466</ymin>
       <xmax>591</xmax>
       <ymax>531</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>musketeer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>599</xmin>
+      <ymin>463</ymin>
+      <xmax>646</xmax>
+      <ymax>508</ymax>
     </bndbox>
   </object>
 </annotation>

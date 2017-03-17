@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1198</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1198.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1198.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -29,10 +29,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>421</xmin>
+      <xmin>432</xmin>
       <ymin>303</ymin>
       <xmax>525</xmax>
-      <ymax>386</ymax>
+      <ymax>384</ymax>
     </bndbox>
   </object>
   <object>
@@ -41,9 +41,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>926</xmin>
-      <ymin>311</ymin>
-      <xmax>1041</xmax>
+      <xmin>931</xmin>
+      <ymin>312</ymin>
+      <xmax>1036</xmax>
       <ymax>394</ymax>
     </bndbox>
   </object>
@@ -53,10 +53,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>494</xmin>
+      <xmin>499</xmin>
       <ymin>449</ymin>
       <xmax>581</xmax>
-      <ymax>517</ymax>
+      <ymax>514</ymax>
     </bndbox>
   </object>
   <object>
@@ -77,10 +77,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>870</xmin>
+      <xmin>875</xmin>
       <ymin>189</ymin>
       <xmax>953</xmax>
-      <ymax>247</ymax>
+      <ymax>250</ymax>
     </bndbox>
   </object>
   <object>
@@ -102,9 +102,33 @@
     <difficult>0</difficult>
     <bndbox>
       <xmin>503</xmin>
-      <ymin>178</ymin>
+      <ymin>180</ymin>
       <xmax>592</xmax>
-      <ymax>246</ymax>
+      <ymax>248</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>prince</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>608</xmin>
+      <ymin>210</ymin>
+      <xmax>676</xmax>
+      <ymax>258</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>skeleton</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>585</xmin>
+      <ymin>289</ymin>
+      <xmax>618</xmax>
+      <ymax>322</ymax>
     </bndbox>
   </object>
 </annotation>

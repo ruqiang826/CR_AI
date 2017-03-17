@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1393</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1393.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1393.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -117,6 +117,18 @@
       <ymin>449</ymin>
       <xmax>775</xmax>
       <ymax>512</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>skeleton</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>491</xmin>
+      <ymin>236</ymin>
+      <xmax>533</xmax>
+      <ymax>260</ymax>
     </bndbox>
   </object>
 </annotation>

@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1043</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1043.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1043.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -29,10 +29,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>421</xmin>
-      <ymin>314</ymin>
-      <xmax>524</xmax>
-      <ymax>387</ymax>
+      <xmin>425</xmin>
+      <ymin>306</ymin>
+      <xmax>525</xmax>
+      <ymax>384</ymax>
     </bndbox>
   </object>
   <object>
@@ -41,9 +41,9 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>931</xmin>
-      <ymin>308</ymin>
-      <xmax>1046</xmax>
+      <xmin>935</xmin>
+      <ymin>309</ymin>
+      <xmax>1042</xmax>
       <ymax>393</ymax>
     </bndbox>
   </object>
@@ -65,10 +65,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>500</xmin>
+      <xmin>497</xmin>
       <ymin>450</ymin>
       <xmax>583</xmax>
-      <ymax>505</ymax>
+      <ymax>514</ymax>
     </bndbox>
   </object>
   <object>
@@ -89,10 +89,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>871</xmin>
-      <ymin>450</ymin>
-      <xmax>947</xmax>
-      <ymax>520</ymax>
+      <xmin>873</xmin>
+      <ymin>454</ymin>
+      <xmax>951</xmax>
+      <ymax>519</ymax>
     </bndbox>
   </object>
   <object>
@@ -105,6 +105,30 @@
       <ymin>422</ymin>
       <xmax>566</xmax>
       <ymax>457</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblins</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>914</xmin>
+      <ymin>424</ymin>
+      <xmax>979</xmax>
+      <ymax>459</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblin</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>940</xmin>
+      <ymin>255</ymin>
+      <xmax>980</xmax>
+      <ymax>288</ymax>
     </bndbox>
   </object>
 </annotation>

@@ -83,4 +83,16 @@
       <ymax>256</ymax>
     </bndbox>
   </object>
+  <object>
+    <name>prince</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>438</xmin>
+      <ymin>388</ymin>
+      <xmax>510</xmax>
+      <ymax>436</ymax>
+    </bndbox>
+  </object>
 </annotation>

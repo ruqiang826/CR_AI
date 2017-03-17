@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1687</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1687.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1687.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -53,10 +53,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>932</xmin>
-      <ymin>307</ymin>
-      <xmax>1047</xmax>
-      <ymax>395</ymax>
+      <xmin>939</xmin>
+      <ymin>310</ymin>
+      <xmax>1042</xmax>
+      <ymax>393</ymax>
     </bndbox>
   </object>
   <object>
@@ -105,6 +105,18 @@
       <ymin>185</ymin>
       <xmax>954</xmax>
       <ymax>250</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>minipekka</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>923</xmin>
+      <ymin>418</ymin>
+      <xmax>963</xmax>
+      <ymax>460</ymax>
     </bndbox>
   </object>
 </annotation>

@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_2409</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_2409.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_2409.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -65,10 +65,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>943</xmin>
+      <xmin>939</xmin>
       <ymin>313</ymin>
       <xmax>1037</xmax>
-      <ymax>397</ymax>
+      <ymax>395</ymax>
     </bndbox>
   </object>
   <object>

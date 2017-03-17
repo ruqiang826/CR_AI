@@ -29,10 +29,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>973</xmin>
+      <xmin>978</xmin>
       <ymin>324</ymin>
       <xmax>1082</xmax>
-      <ymax>405</ymax>
+      <ymax>400</ymax>
     </bndbox>
   </object>
   <object>
@@ -65,10 +65,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>539</xmin>
-      <ymin>461</ymin>
+      <xmin>544</xmin>
+      <ymin>463</ymin>
       <xmax>615</xmax>
-      <ymax>530</ymax>
+      <ymax>529</ymax>
     </bndbox>
   </object>
   <object>
@@ -93,6 +93,54 @@
       <ymin>466</ymin>
       <xmax>996</xmax>
       <ymax>529</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>bomb</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>1000</xmin>
+      <ymin>407</ymin>
+      <xmax>1041</xmax>
+      <ymax>441</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>archers</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>663</xmin>
+      <ymin>493</ymin>
+      <xmax>748</xmax>
+      <ymax>529</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>musketeer</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>755</xmin>
+      <ymin>473</ymin>
+      <xmax>808</xmax>
+      <ymax>510</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>dragon</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>1053</xmin>
+      <ymin>444</ymin>
+      <xmax>1100</xmax>
+      <ymax>507</ymax>
     </bndbox>
   </object>
 </annotation>

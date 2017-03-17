@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_164</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_164.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_164.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -141,6 +141,18 @@
       <ymin>447</ymin>
       <xmax>676</xmax>
       <ymax>500</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>bomb</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>740</xmin>
+      <ymin>456</ymin>
+      <xmax>778</xmax>
+      <ymax>480</ymax>
     </bndbox>
   </object>
 </annotation>

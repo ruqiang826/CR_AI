@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1140</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1140.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1140.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -29,10 +29,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>432</xmin>
-      <ymin>309</ymin>
-      <xmax>519</xmax>
-      <ymax>386</ymax>
+      <xmin>435</xmin>
+      <ymin>307</ymin>
+      <xmax>522</xmax>
+      <ymax>384</ymax>
     </bndbox>
   </object>
   <object>
@@ -41,7 +41,7 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>930</xmin>
+      <xmin>935</xmin>
       <ymin>314</ymin>
       <xmax>1042</xmax>
       <ymax>391</ymax>
@@ -77,10 +77,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>880</xmin>
-      <ymin>180</ymin>
-      <xmax>963</xmax>
-      <ymax>247</ymax>
+      <xmin>874</xmin>
+      <ymin>187</ymin>
+      <xmax>958</xmax>
+      <ymax>248</ymax>
     </bndbox>
   </object>
   <object>
@@ -93,6 +93,42 @@
       <ymin>177</ymin>
       <xmax>590</xmax>
       <ymax>245</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>skeleton</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>530</xmin>
+      <ymin>155</ymin>
+      <xmax>585</xmax>
+      <ymax>187</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>speargoblins</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>685</xmin>
+      <ymin>176</ymin>
+      <xmax>749</xmax>
+      <ymax>252</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblin</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>572</xmin>
+      <ymin>189</ymin>
+      <xmax>626</xmax>
+      <ymax>221</ymax>
     </bndbox>
   </object>
 </annotation>

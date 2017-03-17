@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>img20170303_1047</filename>
-  <path>/home/ruqiang/github/CR_AI/tmp_data/img/img20170303_1047.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1047.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -41,10 +41,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>420</xmin>
-      <ymin>300</ymin>
+      <xmin>432</xmin>
+      <ymin>305</ymin>
       <xmax>523</xmax>
-      <ymax>380</ymax>
+      <ymax>381</ymax>
     </bndbox>
   </object>
   <object>
@@ -65,10 +65,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>498</xmin>
+      <xmin>500</xmin>
       <ymin>178</ymin>
       <xmax>584</xmax>
-      <ymax>249</ymax>
+      <ymax>243</ymax>
     </bndbox>
   </object>
   <object>
@@ -89,10 +89,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>884</xmin>
-      <ymin>189</ymin>
-      <xmax>959</xmax>
-      <ymax>251</ymax>
+      <xmin>879</xmin>
+      <ymin>184</ymin>
+      <xmax>954</xmax>
+      <ymax>246</ymax>
     </bndbox>
   </object>
   <object>
@@ -105,6 +105,30 @@
       <ymin>451</ymin>
       <xmax>952</xmax>
       <ymax>520</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblin</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>887</xmin>
+      <ymin>249</ymin>
+      <xmax>942</xmax>
+      <ymax>279</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>goblins</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>859</xmin>
+      <ymin>420</ymin>
+      <xmax>926</xmax>
+      <ymax>456</ymax>
     </bndbox>
   </object>
 </annotation>
