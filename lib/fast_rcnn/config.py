@@ -22,6 +22,13 @@ import numpy as np
 # `pip install easydict` if you don't have it
 from easydict import EasyDict as edict
 
+CLASSES = ('__background__', 'king', 'eking', 'giant',
+           'arena', 'darena', 'earena','bomb', 'witch',
+           'musketeer', 'prince', 'dragon', 'knight',
+           'minipekka', 'skeleton', 'skeletonarmy',
+           'speargoblin', 'speargoblins', 'archers',
+           'goblin', 'goblins')
+
 __C = edict()
 # Consumers can get config by:
 #   from fast_rcnn_config import cfg

@@ -14,7 +14,7 @@ See README.md for installation instructions before running.
 """
 
 import _init_paths
-from fast_rcnn.config import cfg
+from fast_rcnn.config import cfg, CLASSES
 from fast_rcnn.test import im_detect
 from fast_rcnn.nms_wrapper import nms
 from utils.timer import Timer
@@ -27,11 +27,6 @@ from pascal_voc_io import PascalVocWriter, PascalVocReader
 
 
 
-CLASSES = ('__background__', 'king', 'eking', 'giant',
-           'arena', 'darena', 'earena','bomb', 'witch',
-           'musketeer', 'prince', 'dragon', 'knight',
-                         'minipekka', 'skeleton', 'skeletonarmy',
-                         'speargoblin', 'speargoblins')
 #           'aeroplane', 'bicycle', 'bird', 'boat',
 #           'bottle', 'bus', 'car', 'cat', 'chair',
 #           'cow', 'diningtable', 'dog', 'horse',
@@ -80,8 +75,9 @@ def auto_label(net, image_name, writer):
     """Detect object classes in an image using pre-computed object proposals."""
 
     # Load the demo image
-    im = cv2.imread(im_file)
+    im = cv2.imread(image_name)
 
+    print net,image_name
     # Detect all object classes and regress object bounds
     timer = Timer()
     timer.tic()
