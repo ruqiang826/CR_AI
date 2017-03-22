@@ -12,3 +12,6 @@ cp ../py-faster-rcnn.ruqiang826/output/faster_rcnn_end2end/voc_2007_trainval/vgg
 
 # run auto label, get labeled file in data_out
 python script/auto_label.py --model model/vgg_cnn_m_1024_faster_rcnn_iter_13200.caffemodel --input tmp_data --output data_out/
+
+python script/model_test.py --model model/vgg_cnn_m_1024_faster_rcnn_iter_14200.caffemodel --input test_data
+

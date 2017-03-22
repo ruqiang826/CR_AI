@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
   <filename>filename_100</filename>
-  <path>/home/ruqiang/github/CR_AI/data/img/filename_100.jpg</path>
+  <path>/home/ruqiang/github/CR_AI/test_data/img/filename_100.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -117,18 +117,6 @@
       <ymin>497</ymin>
       <xmax>710</xmax>
       <ymax>532</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>arena</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>641</xmin>
-      <ymin>132</ymin>
-      <xmax>673</xmax>
-      <ymax>582</ymax>
     </bndbox>
   </object>
 </annotation>

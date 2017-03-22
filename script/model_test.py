@@ -10,6 +10,10 @@ from pascal_voc_io import PascalVocWriter, PascalVocReader
 import argparse
 import numpy as np
 
+DEBUG = False
+#DEBUG = True
+class_score = {}
+
 def parse_args():
     """Parse input arguments."""
     parser = argparse.ArgumentParser(description='Faster R-CNN demo')
@@ -74,7 +78,7 @@ def convert_shapes(shapes):
 def distance(label_a, label_b):
     a_center = ((label_a[3] - label_a[1])/2.0 + label_a[1], (label_a[4] - label_a[2])/2.0 + label_a[2])
     b_center = ((label_b[3] - label_b[1])/2.0 + label_b[1], (label_b[4] - label_b[2])/2.0 + label_b[2])
-    #print a_center, b_center
+    #if DEBUG:  print a_center, b_center
     return sqrt(pow(a_center[0] - b_center[0], 2) + pow(a_center[1] - b_center[1], 2))
 
 def label2dict(label_list):
@@ -91,6 +95,7 @@ def compare_label(true_labels, pre_labels, grid = 25.0):
     total_score = 4.0 * len(true_labels)
     score = 0.0
 
+    #print true_labels
     #print pre_labels
     # store the same class name together
     t_dict = label2dict(true_labels)
@@ -99,10 +104,16 @@ def compare_label(true_labels, pre_labels, grid = 25.0):
     #print p_dict
 
     for cls in t_dict.iterkeys():
+        #print "##### match for class {0}".format(cls)
+        if cls not in class_score:
+            class_score[cls] = [0.0, 0.0]
         t_list = t_dict[cls]
         if cls not in p_dict:
-            print "not paired",t_list
-            score -= 4.0 * len(t_list)
+            s = - 4.0 * len(t_list)
+            score += s
+            class_score[cls][0] += s
+            class_score[cls][1] += 4.0 * len(t_list)
+            if DEBUG: print "not paired,score - {0}".format(4.0 * len(t_list)),t_list, score,total_score
             continue
 
         p_list = p_dict[cls]
@@ -118,30 +129,39 @@ def compare_label(true_labels, pre_labels, grid = 25.0):
                     else:
                         tmp_dis = distance(t, p)
                         if tmp_dis < pair_dis: #
-                            print "change tp pair"
+                            #print "change tp pair"
                             tp_pair = (t,p)
                             pair_dis = tmp_dis
-                    print tp_pair, pair_dis
+                    #print t,p, tp_pair, pair_dis
             if pair_dis <= grid * 0.5:
-                score += 4.0
+                s = 4.0
             elif pair_dis <= grid:
-                score += 3.0
+                s = 3.0
             elif pair_dis <= grid * 1.5:
-                score += 2.0
+                s = 2.0
             elif pair_dis <= grid * 2.0:
-                score += 1.0
+                s = 1.0
             else :
-                print "paired but far away",tp_pair
-                score -= 4.0
+                s = -4.0
+            score += s
+            class_score[cls][0] += s
+            class_score[cls][1] += 4.0
+            if DEBUG: print "paired",tp_pair, pair_dis, s, score,total_score
             t_list.remove(tp_pair[0])
             p_list.remove(tp_pair[1])
         if len(t_list) > 0 : #not paired true label:
-            print "not paired",t_list
-            score -= 4.0 * len(t_list)
+            s = -4.0 * len(t_list)
+            score += s
+            class_score[cls][0] += s
+            class_score[cls][1] += 4.0 * len(t_list)
+            if DEBUG: print "not paired,score - {0}".format(4.0 * len(t_list)),t_list, score,total_score
         if len(p_list) > 0 : #mis-predicted label:
-            print "predict error",p_list
-            score -= 4.0 * len(p_list)
-    print total_score,score
+            s = -4.0 * len(p_list)
+            score += s 
+            class_score[cls][0] += s
+            class_score[cls][1] += 4.0 * len(p_list)
+            if DEBUG: print "predict error, score - {0}".format(4.0 * len(p_list)),p_list, score,total_score
+    if DEBUG: print "compare label out:",score,total_score
     return total_score,score
           
                 
@@ -150,7 +170,7 @@ def model_test(net, test_list):
     total_score = 0.0
     score = 0.0
     for im_name in test_list:
-        print "############## scoring {0} ##############".format(im_name)
+        if DEBUG: print "############## scoring {0} ##############".format(im_name)
         im_file = os.path.join(input_dir, 'img', im_name)
 
         label_file = os.path.join(input_dir, 'annotation', im_name)
@@ -169,9 +189,10 @@ def model_test(net, test_list):
         pre_label = predict_label(net, im_file)
 
         t_s,s = compare_label(true_label, pre_label)
+        print "scoring {0}".format(im_name), t_s, s, s/t_s 
         total_score += t_s
-        score += score
-    print total_score, score
+        score += s
+    print "total_score", score, total_score,score/total_score
     return total_score,score
 
 def compare_label_test():
@@ -251,10 +272,7 @@ if __name__ == '__main__':
     net = caffe.Net(prototxt, caffemodel, caffe.TEST)
     im_names = os.listdir(input_dir+"/img")
 
-    print "np"
-    im = 128 * np.ones((300, 500, 3), dtype=np.uint8)
-    for i in xrange(2):
-        _, _= im_detect(net, im)
-
     a,b = model_test(net, im_names)
     print a,b,b/a
+    for i in class_score.iterkeys():
+        print i, class_score[i], class_score[i][0]/class_score[i][1]
