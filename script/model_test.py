@@ -10,9 +10,8 @@ from pascal_voc_io import PascalVocWriter, PascalVocReader
 import argparse
 import numpy as np
 
-DEBUG = False
-#DEBUG = True
-class_score = {}
+#DEBUG = False
+DEBUG = True
 
 def parse_args():
     """Parse input arguments."""
@@ -89,7 +88,7 @@ def label2dict(label_list):
         d[i[0]].append(i)
     return d
     
-def compare_label(true_labels, pre_labels, grid = 25.0):
+def compare_label(true_labels, pre_labels, class_score, grid = 25.0):
     """find every true label in predict_label"""
     
     total_score = 4.0 * len(true_labels)
@@ -166,9 +165,10 @@ def compare_label(true_labels, pre_labels, grid = 25.0):
           
                 
 
-def model_test(net, test_list):
+def model_test(net, test_list, input_dir, iter_num = 1):
     total_score = 0.0
     score = 0.0
+    class_score = {}
     for im_name in test_list:
         if DEBUG: print "############## scoring {0} ##############".format(im_name)
         im_file = os.path.join(input_dir, 'img', im_name)
@@ -188,11 +188,13 @@ def model_test(net, test_list):
         
         pre_label = predict_label(net, im_file)
 
-        t_s,s = compare_label(true_label, pre_label)
+        t_s,s = compare_label(true_label, pre_label, class_score)
         print "scoring {0}".format(im_name), t_s, s, s/t_s 
         total_score += t_s
         score += s
-    print "total_score", score, total_score,score/total_score
+    print "iter {0} total_score".format(iter_num), score, total_score,score/total_score
+    for i in class_score.iterkeys():
+        print "iter {0} class_score:".format(iter_num), i, class_score[i], class_score[i][0]/class_score[i][1]
     return total_score,score
 
 def compare_label_test():
@@ -272,7 +274,5 @@ if __name__ == '__main__':
     net = caffe.Net(prototxt, caffemodel, caffe.TEST)
     im_names = os.listdir(input_dir+"/img")
 
-    a,b = model_test(net, im_names)
+    a,b = model_test(net, im_names, input_dir)
     print a,b,b/a
-    for i in class_score.iterkeys():
-        print i, class_score[i], class_score[i][0]/class_score[i][1]
