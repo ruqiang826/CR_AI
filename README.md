@@ -28,4 +28,12 @@ AI for clash royale
 3. the model in 2 is called pre-model, for further labeling, just manually label the new unit, like giant, save the xml in a temp folder. then use the script auto_label.py to automaticlly label the file in temp folder. got output files with auto-labeled all buildings and manually labeled giant. maually check the auto-labeled files use labelImg.
 4. repeat step 3 for more unit, use pre-model for auto-labeling.
 
+## directory 
+1. data : the ultimate data of img and labels, used for training and testing.
+2. data.1.0.0 : an old version of data, just for backup. do not care.
+3. data_raw: dir for label img. while labeled, the img will be moved from this dir to data.
+4. data_out , tmp_data: used for autolabel. the input is tmp_data, and auto-labeled file is in data_out. see run.sh for the command, you will see it.
+5. data_static: only the img for numbers like the king level, time, hitpoints, water, and the available cards. train an model to recognize these labels, then use the model to auto-label the img in data dir.
+
+
  

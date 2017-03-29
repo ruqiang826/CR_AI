@@ -1,7 +1,7 @@
 <annotation>
   <folder>img</folder>
-  <filename>img20170303_1677</filename>
-  <path>/home/ruqiang/github/CR_AI/data/img/img20170303_1677.jpg</path>
+  <filename>filename_109</filename>
+  <path>/home/ruqiang/github/CR_AI/data/img/filename_109.jpg</path>
   <source>
     <database>Unknown</database>
   </source>
@@ -12,39 +12,27 @@
   </size>
   <segmented>0</segmented>
   <object>
-    <name>musketeer</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>798</xmin>
-      <ymin>441</ymin>
-      <xmax>842</xmax>
-      <ymax>487</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>witch</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>848</xmin>
-      <ymin>441</ymin>
-      <xmax>902</xmax>
-      <ymax>488</ymax>
-    </bndbox>
-  </object>
-  <object>
     <name>king</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>428</xmin>
-      <ymin>301</ymin>
-      <xmax>523</xmax>
-      <ymax>387</ymax>
+      <xmin>458</xmin>
+      <ymin>309</ymin>
+      <xmax>557</xmax>
+      <ymax>396</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>eking</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>974</xmin>
+      <ymin>318</ymin>
+      <xmax>1085</xmax>
+      <ymax>400</ymax>
     </bndbox>
   </object>
   <object>
@@ -53,10 +41,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>506</xmin>
-      <ymin>179</ymin>
-      <xmax>590</xmax>
-      <ymax>246</ymax>
+      <xmin>546</xmin>
+      <ymin>189</ymin>
+      <xmax>622</xmax>
+      <ymax>251</ymax>
     </bndbox>
   </object>
   <object>
@@ -65,22 +53,10 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>505</xmin>
-      <ymin>448</ymin>
-      <xmax>580</xmax>
-      <ymax>515</ymax>
-    </bndbox>
-  </object>
-  <object>
-    <name>darena</name>
-    <pose>Unspecified</pose>
-    <truncated>0</truncated>
-    <difficult>0</difficult>
-    <bndbox>
-      <xmin>874</xmin>
+      <xmin>539</xmin>
       <ymin>460</ymin>
-      <xmax>934</xmax>
-      <ymax>520</ymax>
+      <xmax>614</xmax>
+      <ymax>529</ymax>
     </bndbox>
   </object>
   <object>
@@ -89,22 +65,34 @@
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>870</xmin>
-      <ymin>185</ymin>
-      <xmax>955</xmax>
-      <ymax>251</ymax>
+      <xmin>925</xmin>
+      <ymin>193</ymin>
+      <xmax>999</xmax>
+      <ymax>257</ymax>
     </bndbox>
   </object>
   <object>
-    <name>skeleton</name>
+    <name>earena</name>
     <pose>Unspecified</pose>
     <truncated>0</truncated>
     <difficult>0</difficult>
     <bndbox>
-      <xmin>908</xmin>
-      <ymin>457</ymin>
-      <xmax>936</xmax>
-      <ymax>479</ymax>
+      <xmin>926</xmin>
+      <ymin>467</ymin>
+      <xmax>989</xmax>
+      <ymax>526</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>archersE</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>937</xmin>
+      <ymin>538</ymin>
+      <xmax>990</xmax>
+      <ymax>596</ymax>
     </bndbox>
   </object>
 </annotation>
